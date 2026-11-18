@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Jobs - JobFine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>JobFine</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Explore Available Jobs</h1>
+    <p>Find the right opportunity for your career.</p>
+
+    <input type="text" id="jobSearch"
+    placeholder="Search job title or location..."
+    oninput="displayJobs()">
+
+    <div id="allJobs" class="job-container"></div>
+</main>
+
+<footer class="footer">
+    <h2>JobFine</h2>
+    <p>Your Career, Our Priority.</p>
+    <p>© 2026 JobFine. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

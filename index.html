@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFine - Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>JobFine</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Find Your Dream Job Today!</h1>
+
+        <p>Discover opportunities and build your future with JobFine.</p>
+
+        <div class="search-box">
+
+            <input type="text" id="jobTitle"
+            placeholder="Enter job title...">
+
+            <input type="text" id="jobLocation"
+            placeholder="Enter location...">
+
+            <button onclick="searchJobs()">Search Jobs</button>
+
+        </div>
+
+        <div id="jobResults"></div>
+
+    </section>
+
+
+    <section class="categories">
+
+        <h2>Explore Job Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card"
+            onclick="openCategory('IT & Software')">
+                <h3>💻 IT & Software</h3>
+                <p>Technology jobs</p>
+            </div>
+
+            <div class="category-card"
+            onclick="openCategory('Finance')">
+                <h3>📊 Finance</h3>
+                <p>Finance and accounting</p>
+            </div>
+
+            <div class="category-card"
+            onclick="openCategory('Design')">
+                <h3>🎨 Design</h3>
+                <p>Creative opportunities</p>
+            </div>
+
+            <div class="category-card"
+            onclick="openCategory('Marketing')">
+                <h3>📢 Marketing</h3>
+                <p>Marketing careers</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="featured-jobs" id="jobs">
+
+        <h2>Featured Jobs</h2>
+
+        <div class="job-container">
+
+            <div class="job-card">
+                <h3>Software Developer</h3>
+                <p>Company: Google</p>
+                <p>Location: Bangalore</p>
+                <p>Salary: 6-10 LPA</p>
+
+                <a href="apply.html?job=Software Developer">
+                    <button>Apply Now</button>
+                </a>
+            </div>
+
+
+            <div class="job-card">
+                <h3>Web Developer</h3>
+                <p>Company: Infosys</p>
+                <p>Location: Belagavi</p>
+                <p>Salary: 4-6 LPA</p>
+
+                <a href="apply.html?job=Web Developer">
+                    <button>Apply Now</button>
+                </a>
+            </div>
+
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p>Company: TCS</p>
+                <p>Location: Mumbai</p>
+                <p>Salary: 5-8 LPA</p>
+
+                <a href="apply.html?job=Data Analyst">
+                    <button>Apply Now</button>
+                </a>
+            </div>
+
+        </div>
+
+        <a href="jobs.html">
+            <button class="view-all-btn">View All Jobs</button>
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <h2>JobFine</h2>
+
+    <p>Your Career, Our Priority.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-login.html">Admin</a>
+    </div>
+
+    <p>© 2026 JobFine. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

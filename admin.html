@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - JobFine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>JobFine Admin</h2>
+
+    <nav>
+        <a href="index.html">Website</a>
+        <button onclick="adminLogout()">Logout</button>
+    </nav>
+</header>
+
+<main class="admin-dashboard">
+
+    <h1>Admin Dashboard</h1>
+    <p>Manage job applications and applicants.</p>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h3>Total Applicants</h3>
+            <h1 id="totalApplicants">0</h1>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Jobs</h3>
+            <h1 id="totalJobs">0</h1>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Pending Applications</h3>
+            <h1 id="pendingApplications">0</h1>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Accepted Applications</h3>
+            <h1 id="acceptedApplications">0</h1>
+        </div>
+
+    </div>
+
+    <h2>Applicant Details</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Job</th>
+                    <th>Qualification</th>
+                    <th>Skills</th>
+                    <th>Resume</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="applicantTable"></tbody>
+        </table>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

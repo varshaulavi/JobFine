@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JobFine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>JobFine</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="form-container">
+
+    <h1>Contact Us</h1>
+
+    <p>Have any questions? Send us a message.</p>
+
+    <form id="contactForm">
+
+        <label>Name</label>
+        <input type="text" id="contactName" required>
+
+        <label>Email</label>
+        <input type="email" id="contactEmail" required>
+
+        <label>Subject</label>
+        <input type="text" id="contactSubject" required>
+
+        <label>Message</label>
+        <textarea id="contactMessage" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="contactStatus"></p>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
